@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action1"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:iconTint="@color/whiteColor"
+        android:title="Search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action2"
+        android:icon="@android:drawable/sym_action_email"
+        android:iconTint="@color/whiteColor"
+        android:title="New group"/>
+    <item
+        android:id="@+id/action3"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:iconTint="@color/whiteColor"
+        android:title="New Broadcast"/>
+
+    <item
+        android:id="@+id/action4"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:iconTint="@color/whiteColor"
+        android:title="WhatsApp Web"/>
+    <item
+        android:id="@+id/action5"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:iconTint="@color/whiteColor"
+        android:title="Starred messages"/>
+    <item
+        android:id="@+id/action6"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:iconTint="@color/whiteColor"
+        android:title="Settings"/>
+</menu>

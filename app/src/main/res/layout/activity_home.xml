@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.HomeActivity">
+    <com.training.whatsappclone.utils.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/header"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tabLayout"
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme"/>
+        <com.google.android.material.tabs.TabLayout
+            app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabTextColor="@color/whiteColor"
+            app:tabSelectedTextColor="@color/whiteColor"
+            app:tabIndicatorColor="@color/whiteColor"
+            />
+        <View
+            app:layout_constraintTop_toBottomOf="@id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/toolbar_drop_shadow"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
