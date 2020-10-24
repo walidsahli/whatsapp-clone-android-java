@@ -10,7 +10,10 @@ import android.util.Log;
 import android.view.Display;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.google.android.material.tabs.TabLayout;
 import com.training.whatsappclone.R;
@@ -41,7 +44,7 @@ public class HomeActivity extends AppCompatActivity implements CustomViewPager.V
         setTitle("WhatsApp");
         display = getWindowManager(). getDefaultDisplay();
         display.getSize(size);
-        screenWidth = (int) size.x;
+        screenWidth = size.x;
         header = findViewById(R.id.header);
         toolbar = findViewById(R.id.my_toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -49,6 +52,7 @@ public class HomeActivity extends AppCompatActivity implements CustomViewPager.V
         setSupportActionBar(toolbar);
         viewPager = findViewById(R.id.pager);
         tabLayout = findViewById(R.id.tabLayout);
+
         adapter = new TabAdapter(getSupportFragmentManager());
         adapter.addFragment(new CameraFragment() , "Camera");
         adapter.addFragment(new ChatFragment(), "Chat");
